@@ -124,6 +124,7 @@ jobs:
 
       - name: Confirm pinned .NET SDK
         shell: pwsh
+        working-directory: source
         run: |
           $sdk = dotnet --version
           Write-Host "Selected SDK: $sdk"
